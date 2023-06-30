@@ -1,12 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Boilerplate
+
 
 
 ## 📚 Features
 
-With this template, you get all the awesomeness you need:
+Lista de plugins 
 
-- 🏎️ **[Next.js](https://nextjs.org/)** - Fast by default, with config optimized for performance
-- 💅 **[Tailwind CSS](https://tailwindcss.com/)** - A utility-first CSS framework for rapid UI development
-- 🎭 **[Playwright](https://playwright.dev/)** - Write end-to-end tests like a pro
-- 📝 **[Conventional commits git hook](https://www.conventionalcommits.org/)** - Keep your commit history neat and tidy
-- 💎 **[CVA](http://cva.style/)** - Create a consistent, reusable, and atomic design system
+- **[Next.js](https://nextjs.org/)** 
+- **[Tailwind CSS](https://tailwindcss.com/)** 
+- **[Jest](https://jestjs.io/pt-BR/)**
+- **[Playwright](https://playwright.dev/)**
+- **[Conventional commits git hook](https://www.conventionalcommits.org/)** 
+- **[CVA](http://cva.style/)**
+- **[Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)**
+- **[Patch-package](https://www.npmjs.com/package/patch-package)**
+- **[Semantic Release](https://github.com/semantic-release/semantic-release)**
