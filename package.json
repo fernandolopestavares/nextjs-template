@@ -7,9 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "jest --passWithNoTests",
     "e2e:headless": "playwright test",
     "e2e:ui": "playwright test --ui",
-    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|playwright.config.ts|next.config.js|next-env.d.ts|e2e/|README.md' --image graph.svg"
+    "postinstall": "npx patch-package -y",
+    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|e2e/|README.md|.eslintrc.json' --image graph.svg"
   },
   "dependencies": {
     "@semantic-release/changelog": "^6.0.3",
@@ -23,17 +25,27 @@
     "eslint-config-next": "13.4.7",
     "next": "13.4.7",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tailwind-merge": "^1.13.2"
   },
   "devDependencies": {
+    "@copastur/eslint-config": "1.0.0",
+    "@jest/globals": "^29.5.0",
     "@playwright/test": "^1.32.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "autoprefixer": "10.4.14",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "patch-package": "^7.0.0",
     "postcss": "8.4.24",
+    "prettier-plugin-tailwindcss": "^0.3.0",
     "semantic-release": "^21.0.1",
     "tailwindcss": "3.3.2",
+    "ts-jest": "^29.1.0",
     "typescript": "5.1.6"
   }
 }
