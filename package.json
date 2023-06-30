@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "e2e:headless": "playwright test",
-    "e2e:ui": "playwright test --ui"
+    "e2e:ui": "playwright test --ui",
+    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|playwright.config.ts|next.config.js|next-env.d.ts|e2e/|README.md' --image graph.svg"
   },
   "dependencies": {
     "@semantic-release/changelog": "^6.0.3",
